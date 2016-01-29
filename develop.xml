@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="remoteAB" revision="develop" fetch="ssh://git@github.com/smipi1/"/>
+  <project remote="remoteAB" name="repo-flow-test-projectA" path="projectA"/>
+  <project remote="remoteAB" name="repo-flow-test-projectB" path="projectB"/>
+  <remote name="remoteCD" revision="develop" fetch="ssh://git@github.com/smipi1/"/>
+  <project remote="remoteCD" name="repo-flow-test-projectC" path="projectC"/>
+  <project remote="remoteCD" name="repo-flow-test-projectD" path="projectD"/>
+</manifest>
