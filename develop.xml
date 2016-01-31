@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="remoteAB" revision="develop" upstream="develop" fetch="ssh://git@github.com/smipi1/"/>
+  <remote name="remoteAB" revision="develop" upstream="develop" fetch="ssh://git@github.com/smipi1/">
+    <flow>
+      <branch master="master" develop="develop"/>
+      <prefix feature="feature/" release="release/" hotfix="hotfix/" support="support/" versiontag="v"/>
+    </flow>
+  </remote>
   <project remote="remoteAB" name="repo-flow-test-projectA" path="projectA"/>
   <project remote="remoteAB" name="repo-flow-test-projectB" path="projectB"/>
   <remote name="remoteCD" revision="develop" upstream="develop" fetch="ssh://git@github.com/smipi1/"/>
   <project remote="remoteCD" name="repo-flow-test-projectC" path="projectC"/>
-  <project remote="remoteCD" name="repo-flow-test-projectD" path="projectD"/>
+  <project remote="remoteCD" name="repo-flow-test-projectD" path="projectD" revision="f8a16ad81456439e87cc944450f642aecb10c184"/>
 </manifest>
